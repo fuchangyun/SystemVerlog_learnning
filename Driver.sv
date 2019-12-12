@@ -18,6 +18,7 @@ function Driver::new(string name = "DriverBase",Packet pkt_in ,virtual router_io
   //Inside new() assign class property name with string passed via argument
   
   this.pkt = new();
+  this.pkt=pkt_in.copy();
   //this.p=0;
 endfunction: new
 
